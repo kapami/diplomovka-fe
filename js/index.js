@@ -1,85 +1,9 @@
-
-// JSON containing multiple items
-// let json = [
-//     {
-//         "name": "Item 1",
-//         "description": "This is item 1",
-//         "price": 10
-//     },
-//     {
-//         "name": "Item 2",
-//         "description": "This is item 2",
-//         "price": 20
-//     },
-//     {
-//         "name": "Item 3",
-//         "description": "This is item 3",
-//         "price": 30
-//     }
-// ];
-//
-// // Get the search box, button, and items container elements
-// let searchBox = document.getElementById("jsonInput");
-// let showItemsButton = document.getElementById("showItemsButton");
-//
-// // Add event listener to button
-// showItemsButton.addEventListener("click", function() {
-//     // Remove the hide class from the items container
-//     itemsContainer.classList.remove("hide");
-//     searchBox.classList.add("hide");
-//     showItemsButton.classList.add("hide");
-//
-//     // Clear any existing items
-//     itemsContainer.innerHTML = "";
-//
-//     // Get the search term
-//     let searchTerm = searchBox.value.toLowerCase();
-//
-//     // Filter the JSON array based on the search term
-//     let filteredItems = json.filter(function(item) {
-//         return item.name.toLowerCase().includes(searchTerm) || item.description.toLowerCase().includes(searchTerm);
-//     });
-//
-//     // Loop through the filtered items
-//     filteredItems.forEach(function(item) {
-//         // Create a new element to display the item
-//         let itemElement = document.createElement("div");
-//         itemElement.className = "item";
-//
-//         // Create child elements to display the attributes (name, description, price)
-//         let nameElement = document.createElement("h2");
-//         nameElement.textContent = item.name;
-//
-//         let descriptionElement = document.createElement("p");
-//         descriptionElement.textContent = item.description;
-//
-//         let priceElement = document.createElement("p");
-//         priceElement.className = "price";
-//         priceElement.textContent = "Price: $" + item.price;
-//
-//         // Append the child elements to the item element
-//         itemElement.appendChild(nameElement);
-//         itemElement.appendChild(descriptionElement);
-//         itemElement.appendChild(priceElement);
-//
-//         // Append the item element to the container
-//         itemsContainer.appendChild(itemElement);
-//     });
-// });
-
-
-//////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////
-
-
 let itemsContainer = document.getElementById("itemsContainer");
 
 function sendJson() {
     const jsonInput = document.getElementById('jsonInput').value;
 
-    fetch('http://localhost:8080/process-json', {
+    fetch('https://cloud-assistant-be.onrender.com/process-json', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
