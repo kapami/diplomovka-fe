@@ -23,28 +23,6 @@ body {
     margin: 0;
 }
 
-/*.item {*/
-/*    background-color: #fff;*/
-/*    border: 1px solid #ddd;*/
-/*    border-radius: 5px;*/
-/*    padding: 20px;*/
-/*    margin-bottom: 20px;*/
-/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
-/*}*/
-
-/*.item h2 {*/
-/*    margin-top: 0;*/
-/*}*/
-
-/*.item p {*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*.item .price {*/
-/*    font-weight: bold;*/
-/*    color: #4caf50;*/
-/*}*/
-
 .form {
     display: flex;
     margin-bottom: 20px;
