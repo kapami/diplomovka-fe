@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Multiple Items from JSON</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <h1>Cognitive Cloud Assistant</h1>
+    </div>
+    <div class="container search-form">
+        <label for="jsonInput">Please describe the architecture you would like to have:</label>
+        <div class="form">
+<!--            <input type="text" id="searchBox" placeholder="Search items">-->
+            <textarea id="jsonInput" rows="10" cols="50" placeholder="Input JSON"></textarea>
+            <button id="showItemsButton" onclick="sendJson()">Show Items</button>
+        </div>
+        <div id="itemsContainer"></div>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
